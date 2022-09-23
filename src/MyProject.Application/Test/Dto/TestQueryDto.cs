@@ -1,14 +1,11 @@
-﻿using Abp.AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using MyProject;
-using Abp.Application.Services.Dto;
+﻿using Abp.Application.Services.Dto;
+using Abp.AutoMapper;
+using MyProject.EntityFrameworkCore.Models;
 
 namespace MyProject
 {
     [AutoMap(typeof(Test))]
-    public class TestQueryDto: PagedResultRequestDto
+    public class TestQueryDto : PagedResultRequestDto
     {
     }
 }

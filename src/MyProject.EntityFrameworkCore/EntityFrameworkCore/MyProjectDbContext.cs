@@ -3,6 +3,7 @@ using Abp.Zero.EntityFrameworkCore;
 using MyProject.Authorization.Roles;
 using MyProject.Authorization.Users;
 using MyProject.MultiTenancy;
+using MyProject.EntityFrameworkCore.Models;
 
 namespace MyProject.EntityFrameworkCore
 {

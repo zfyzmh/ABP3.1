@@ -2,10 +2,13 @@
 using Abp.Authorization;
 using Abp.Domain.Repositories;
 using Abp.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
 using MyProject.EntityFrameworkCore;
+using MyProject.EntityFrameworkCore.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace MyProject
@@ -22,6 +25,14 @@ namespace MyProject
         {
            return abpHelper.GetDB().Execute("INSERT INTO Test VALUES ('test')");
 
+        }
+        [HttpGet]
+        public async Task<TestDto> formbody(TestDto  testDto) {
+            return await Task.Run(() =>
+            {
+                Thread.Sleep(5000);
+                return testDto;
+            });
         }
     }
 }

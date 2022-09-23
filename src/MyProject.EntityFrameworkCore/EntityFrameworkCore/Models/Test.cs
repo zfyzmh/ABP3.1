@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
 
-namespace MyProject
+namespace MyProject.EntityFrameworkCore.Models
 {
     /// <summary>
     /// 测试实体类 
